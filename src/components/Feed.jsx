@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Box, Typography, Stack } from "@mui/material";
+import SideBar from "./SideBar";
 
 const Feed = () => (
   <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
@@ -10,7 +11,7 @@ const Feed = () => (
         px: { sx: 0, md: 2 },
       }}
     >
-      Sidebar
+      <SideBar />
       <Typography
         className="copyright"
         variant="body2"
